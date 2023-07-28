@@ -7,6 +7,18 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+.header-description{
+	color: transparent;
+	transition: color .3s;
+}
+.header-description:hover{
+	color: white;
+}
+body, .page-wrapper{
+	background-color: #a2a7ac;
+
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -23,7 +35,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+	
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2070,7 +2084,7 @@ input, select, textarea {
 
 	.wrapper {
 		position: relative;
-		background: #fff;
+		background: #e0e0e0;
 		overflow-x: hidden;
 		padding: 6em 0 6em 0;
 	}
