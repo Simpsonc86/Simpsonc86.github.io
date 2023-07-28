@@ -1761,6 +1761,11 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			
+		}
+		.avatar{
+			object-fit:none;
+			max-height: 300px;
 		}
 
 		.image.fit {
