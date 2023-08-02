@@ -427,6 +427,8 @@ input, select, textarea {
 
 		.row > .col-12 {
 			width: 100%;
+			/* display: flex;
+			flex-direction: column; */
 		}
 
 		.row > .off-12 {
@@ -1650,6 +1652,7 @@ input, select, textarea {
 
 				.row > .col-12-mobilep {
 					width: 100%;
+					
 				}
 
 				.row > .off-12-mobilep {
@@ -1858,14 +1861,14 @@ input, select, textarea {
 
 	ul.divided {
 		list-style: none;
-		padding-left: 0;
 	}
 
 		ul.divided li {
 			border-top: solid 1px #d2d7dc;
 			padding-top: 2em;
 			margin-top: 2em;
-			padding-left: 0;
+			padding-left: 3rem;
+
 		}
 
 			ul.divided li:first-child {
