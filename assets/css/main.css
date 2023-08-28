@@ -5,7 +5,10 @@
 	Telephasic by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+	*/
+.profile-pic{
+		border-radius: 50%;
+}
 
 .header-description{
 	color: transparent;
@@ -230,6 +233,8 @@ input, select, textarea {
 
 	header {
 		margin-bottom: 1.5em;
+		display: flex;
+		justify-content: space-around;
 	}
 
 		header > p {
