@@ -17,6 +17,9 @@
 .plus{
 	height:15rem;
 }
+.qr{
+	text-decoration: none;
+}
 
 .header-description{
 	color: transparent;
