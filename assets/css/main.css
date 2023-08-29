@@ -19,6 +19,7 @@
 }
 .qr{
 	text-decoration: none;
+	border-bottom:none ;
 }
 
 .header-description{
