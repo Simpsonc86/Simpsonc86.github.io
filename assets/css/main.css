@@ -16,8 +16,9 @@
 }	
 .profile-pic{
 		border-radius: 100%;
-		height:15rem;
-		width:10rem;
+		height:28rem;
+		width:21rem;
+		object-position:center ;
 		/* max-height: 500px; */
 		/* max-width: 50%; */
 		object-fit: cover;
@@ -2114,7 +2115,7 @@ input, select, textarea {
 		position: relative;
 		background: #e0e0e0;
 		overflow-x: hidden;
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 	}
 
 	.image-wrapper {
@@ -2172,7 +2173,7 @@ input, select, textarea {
 		-webkit-transform: translate3d(0, 0, 0);
 		position: relative;
 		border-top: solid 1px #c2c7cc;
-		padding: 6em 0 6em 0;
+		padding: 2em 0 2em 0;
 		background-image: url("images/overlay.png"), url("images/footer.svg");
 		background-size: 128px 128px,				100% 100%;
 	}
@@ -2430,7 +2431,7 @@ input, select, textarea {
 	}
 
 		#footer header.major {
-			margin-bottom: 3em;
+			margin-bottom: 2em;
 		}
 
 /* Copyright */
@@ -2479,7 +2480,7 @@ input, select, textarea {
 			}
 
 			#footer-wrapper {
-				padding: 5em 0 5em 0;
+				padding: 2em 0 2em 0;
 			}
 
 	}
@@ -2524,7 +2525,7 @@ input, select, textarea {
 			}
 
 			#footer-wrapper {
-				padding: 4em 2em 4em 2em;
+				padding: 2em 2em 2em 2em;
 			}
 
 		/* Header */
@@ -2760,7 +2761,7 @@ input, select, textarea {
 			}
 
 			#footer-wrapper {
-				padding: 3em 20px 3em 20px;
+				padding: 2em 20px 2em 20px;
 			}
 
 		/* Header */
