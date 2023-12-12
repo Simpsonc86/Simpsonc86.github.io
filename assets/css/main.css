@@ -1910,9 +1910,9 @@ header.major {
 /* Image */
 
 .image {
-	-moz-transition: opacity 0.25s ease-in-out;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	-ms-transition: opacity 0.25s ease-in-out;
+	-moz-transition: transform 0.8s ease-in-out, opacity 0.25s ease-in-out;
+	-webkit-transition: transform 0.8s ease-in-out, opacity 0.25s ease-in-out;
+	-ms-transition: transform 0.8s ease-in-out, opacity 0.25s ease-in-out;
 	transition: transform 0.8s ease-in-out, opacity 0.25s ease-in-out;
 	display: inline-block;
 	outline: 0;
