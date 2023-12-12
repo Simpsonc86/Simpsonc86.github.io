@@ -6,6 +6,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	*/
+.pic {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+padding-top: 30px;
+}
 
 .header-div {
 	display: flex;
@@ -224,9 +230,10 @@ body {
 	background: #f5f7fa;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 900;
-	color: #52575c;
+	color: #1d1160;
 	line-height: 1.75em;
 	font-size: 14pt;
+
 }
 
 body.is-preload *,
@@ -259,7 +266,7 @@ h4,
 h5,
 h6 {
 	font-weight: 300;
-	color: #52575c;
+	color: #1d1160;
 }
 
 h1 a,
@@ -289,18 +296,21 @@ a {
 	transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 	color: inherit;
 	text-decoration: none;
-	border-bottom: dotted 1px #62676c;
+	/* border-bottom: dotted 1px #62676c; */
 }
 
 a:hover {
-	color: #f35858;
-	border-bottom-color: rgba(255, 255, 255, 0);
+	color: #00788c;
+	border-bottom-color: #1d1160;
 }
 
 strong,
 b {
 	font-weight: 400;
-	color: #42474c;
+	color: #00788c;
+	border-color: #1d1160;
+	text-shadow: -1px -1px 2px #1d1160, 1px -1px 2px #1d1160, -1px 1px 2px #1d1160, 1px 1px 2px #1d1160;
+
 }
 
 em,
@@ -1920,9 +1930,10 @@ header.major {
 }
 
 a.image:hover {
-	transform: scale(1.05) translateY(-.7em);
+	transform: scale(1.1);
 	/* opacity: 0.45; */
 }
+
 a.image:not(:hover)::after {
 	content: '';
 	display: block;
@@ -2034,7 +2045,7 @@ ul.divided {
 }
 
 ul.divided li {
-	border-top: solid 1px #d2d7dc;
+	/* border-top: solid 1px #d2d7dc; */
 	padding-top: 2em;
 	margin-top: 2em;
 	padding-left: 3rem;
@@ -2056,12 +2067,17 @@ ul.icons {
 
 ul.icons li {
 	padding-left: 0;
+	transition: transform 0.8s ease-in-out;
+}
+
+ul.icons li:hover {
+	transform: scale(1.25);
 }
 
 ul.icons li:before {
 	display: inline-block;
 	color: #fff;
-	background: #61666b;
+	background: #1d1160;
 	width: 2.5em;
 	height: 2.5em;
 	border-radius: 0.35em;
@@ -2193,15 +2209,15 @@ input[type="submit"],
 input[type="reset"],
 button,
 .button {
-	-moz-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-	-webkit-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-	-ms-transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
-	transition: color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+	-moz-transition: transform .8s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+	-webkit-transition: transform .8s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+	-ms-transition: transform .8s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+	transition: transform .8s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out, background-color 0.25s ease-in-out;
 	display: inline-block;
 	color: inherit;
 	background: none;
 	text-decoration: none;
-	border: solid 1px #c2c7cc;
+	border: solid 1px #1d1160;
 	border-radius: 0.35em;
 	padding: 0.8em 2em 0.8em 2em;
 	cursor: pointer;
@@ -2213,8 +2229,17 @@ input[type="submit"]:hover,
 input[type="reset"]:hover,
 button:hover,
 .button:hover {
-	color: #f35858;
-	border-color: rgba(243, 88, 88, 0.5);
+	color: #00788c;
+	border-color: #00788c;
+	background-color: #1d1160;
+	transform: scale(1.25);
+}
+
+.button:not(:hover)::after {
+	content: '';
+	display: block;
+	transform: translateY(0);
+	/* opacity: 1; */
 }
 
 /* Icons */
@@ -2590,7 +2615,7 @@ button:hover,
 	z-index: 1;
 	text-align: center;
 	border-top: solid 1px #d2d7dc;
-	color: #a2a7ac;
+	color: #1d1160;
 	padding-top: 4em;
 	margin-top: 6em;
 }
@@ -2757,6 +2782,17 @@ button:hover,
 
 	span.extra {
 		display: inline;
+		transition: transform 0.8s ease-in-out;
+	}
+
+	span.extra:hover {
+		transform: scale(1.05);
+	}
+
+	span.extra:not(:hover)::after {
+		content: '';
+		display: block;
+		transform: translateY(0);
 	}
 
 	.features {
@@ -2953,7 +2989,7 @@ button:hover,
 	}
 
 	#footer ul.divided li:first-child {
-		border-top: solid 1px #d2d7dc;
+		/* border-top: solid 1px #d2d7dc; */
 		padding-top: 0.75em;
 		margin-top: 0.75em;
 	}
